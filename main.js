@@ -9,7 +9,7 @@ let startGIFPosition = 0;
 const MAX_GIF_LIMIT = 9;
 
 function queryAPI(wordToSearch) {
-  const url = `http://api.giphy.com/v1/gifs/search?q=${wordToSearch}&api_key=${apiKey}&limit=${MAX_GIF_LIMIT}&offset=${startGIFPosition}`;
+  const url = `https://api.giphy.com/v1/gifs/search?q=${wordToSearch}&api_key=${apiKey}&limit=${MAX_GIF_LIMIT}&offset=${startGIFPosition}`;
 
   fetch(url)
     .then(response => response.json())
